@@ -11,7 +11,9 @@ import img9 from "../../assets/images/Rectangle 14.png"
 
 const Home = () => {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 mx-auto gap-4">
+       <div>
+        <h2 className="text-4xl font-bold w-fit mx-auto border-b-2 px-4 border-green-400">Our Gallary</h2>
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 mx-auto gap-4">
             <div>
                 <img className="w-96 h-96 rounded-lg" src={img1} alt="" />
             </div>
@@ -40,6 +42,7 @@ const Home = () => {
                 <img className="w-96 h-96 rounded-lg" src={img9} alt="" />
             </div>   
         </div>
+       </div>
     );
 };
 
