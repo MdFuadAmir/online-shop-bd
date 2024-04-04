@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router-dom";
 
 const ProductDetails = () => {
     const productDetails = useLoaderData();
-    const {title,price,discountPercentage,stock,images,brand,rating,} = productDetails;
+    const {title,price,discountPercentage,stock,images,brand,rating,description} = productDetails;
     
     return (
         <div>
@@ -17,6 +17,8 @@ const ProductDetails = () => {
           <h3 className="text-xl font-semibold">Price: <span className=" text-red-600">{price}$</span> </h3>
           <h3 className="text-xl font-semibold">Discount Percentage: <span className="text-green-600">{discountPercentage}$</span></h3>
           <h3 className="text-xl font-semibold">Rating: {rating}</h3>
+          <p>Description: {description}</p>
+
           <div className="">
           <button className="btn btn-outline btn-info w-full">Add to cart</button>
           </div>
